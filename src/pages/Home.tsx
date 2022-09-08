@@ -50,7 +50,7 @@ export const Home: FunctionComponent = () => {
           <Chapter>ABOUT ME</Chapter>
         </Animator>
       </ScrollPage>
-      <ScrollPage>
+      {/* <ScrollPage>
         <div
           style={{
             display: 'flex',
@@ -76,7 +76,7 @@ export const Home: FunctionComponent = () => {
             There's FadeAnimation, MoveAnimation, StickyAnimation, ZoomAnimation
           </span>
         </Animator>
-      </ScrollPage>
+      </ScrollPage> */}
     </ScrollContainer>
   );
 };
