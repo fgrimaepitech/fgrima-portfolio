@@ -4,6 +4,7 @@ export const TitleContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: max-content;
 `;
 
 export const TitleFill = styled.h1`
@@ -14,6 +15,9 @@ export const TitleFill = styled.h1`
   -webkit-text-fill-color: transparent;
   font-weight: 700;
   text-transform: uppercase;
+  @media (max-width: 700px) {
+    font-size: 60px;
+  }
 `;
 
 export const TitleBorder = styled.h1`
@@ -28,4 +32,8 @@ export const TitleBorder = styled.h1`
   text-transform: uppercase;
   clip-path: inset(-1% -1% 50% -1%);
   margin-bottom: -134px;
+  @media (max-width: 700px) {
+    font-size: 60px;
+    margin-bottom: -60px;
+  }
 `;
