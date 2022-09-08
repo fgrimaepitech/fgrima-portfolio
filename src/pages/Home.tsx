@@ -15,6 +15,7 @@ import {
   ZoomIn,
   ZoomOut,
 } from 'react-scroll-motion';
+import { Chapter } from '../components/Chapter';
 import {
   LogoContainer,
   Logo,
@@ -46,7 +47,7 @@ export const Home: FunctionComponent = () => {
       </ScrollPage> */}
       <ScrollPage>
         <Animator animation={FadeUp}>
-          <span style={{ fontSize: '40px' }}>I'm FadeUp ⛅️</span>
+          <Chapter>ABOUT ME</Chapter>
         </Animator>
       </ScrollPage>
       <ScrollPage>
