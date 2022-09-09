@@ -103,6 +103,12 @@ export const Icon = styled(_Icon)`
   height: 150px;
   padding: 10px;
   margin: 10px;
+  @media (max-width: 700px) {
+    width: 50px;
+    height: 50px;
+    margin: 30px;
+    background-color: transparent;
+  }
 `;
 
 export const ContactIcon = styled(_ContactIcon)`
