@@ -3,6 +3,8 @@ import {
   Animator as _Animator,
   ScrollPage as _ScrollPage,
 } from 'react-scroll-motion';
+import { Icon as _Icon } from '../components/Icon';
+import { ContactIcon as _ContactIcon } from '../components/ContactIcon';
 
 export const LogoContainer = styled.div`
   display: flex;
@@ -86,4 +88,27 @@ export const Description = styled.h1`
     font-size: 15px;
     max-width: 300px;
   }
+`;
+
+export const IconContainer = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 800px;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const Icon = styled(_Icon)`
+  width: 150px;
+  height: 150px;
+  padding: 10px;
+  margin: 10px;
+`;
+
+export const ContactIcon = styled(_ContactIcon)`
+  width: 150px;
+  height: 150px;
+  padding: 10px;
+  margin: 10px;
+  cursor: pointer;
 `;
