@@ -15,6 +15,7 @@ import {
   ZoomIn,
   ZoomOut,
 } from 'react-scroll-motion';
+import { AboutMe } from '../components/AboutMe';
 import { Chapter } from '../components/Chapter';
 import {
   LogoContainer,
@@ -23,6 +24,10 @@ import {
   ScrollPage,
   IconScroll,
   LogoContainerBot,
+  MeContainer,
+  Avatar,
+  Name,
+  Description,
 } from '../styles/home.style';
 
 export const Home: FunctionComponent = () => {
@@ -48,6 +53,20 @@ export const Home: FunctionComponent = () => {
       <ScrollPage>
         <Animator animation={FadeUp}>
           <Chapter>ABOUT ME</Chapter>
+        </Animator>
+      </ScrollPage>
+      <ScrollPage>
+        <Animator animation={FadeUp}>
+          <MeContainer>
+            <Avatar alt="Avatar" src="/ibok.svg" />
+            <Name>Florian Grima</Name>
+            <Animator animation={MoveIn(-1000, 0)}>
+              <Description>{`I’m IT developper and Epitech Student in Marseille.`}</Description>
+            </Animator>
+            <Animator animation={MoveIn(1000, 0)}>
+              <Description>{`I’m currently work at Gamercraft as Fullstack Developper.`}</Description>
+            </Animator>
+          </MeContainer>
         </Animator>
       </ScrollPage>
       {/* <ScrollPage>

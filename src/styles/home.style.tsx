@@ -55,3 +55,35 @@ export const ScrollPage = styled(_ScrollPage)`
   height: 100%;
   width: 100%;
 `;
+
+export const MeContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: max-content;
+`;
+
+export const Avatar = styled.img`
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+`;
+
+export const Name = styled.h1`
+  font-size: 48px;
+  font-weight: 500;
+  color: #fff;
+`;
+
+export const Description = styled.h1`
+  font-size: 30px;
+  font-weight: 500;
+  max-width: 800px;
+  color: #fff;
+  text-align: center;
+  @media (max-width: 700px) {
+    font-size: 15px;
+    max-width: 300px;
+  }
+`;
