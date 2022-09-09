@@ -126,7 +126,9 @@ export const Home: FunctionComponent = () => {
       </ScrollPage>
       <ScrollPage>
         <Animator animation={FadeUp}>
-          <Description>{`Made by Florian Grima/bluefox with ♥️`}</Description>
+          <Atropos activeOffset={40} shadowScale={1.05}>
+            <Description data-atropos-offset="10">{`Made by Florian Grima/bluefox with ♥️`}</Description>
+          </Atropos>
         </Animator>
       </ScrollPage>
     </ScrollContainer>
