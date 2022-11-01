@@ -1,5 +1,5 @@
 import { IconContent } from '../components/IconContent';
-import React, { FunctionComponent, useState } from 'react';
+import React, { FunctionComponent, useCallback, useState } from 'react';
 import {
   HomeContainer,
   MainContent,
@@ -14,15 +14,23 @@ import {
   ExperiencesContainer,
   ExperienceContainer,
   MailContact,
+  Particles,
 } from '../styles/home.style';
 import Atropos from 'atropos/react';
 import { IconContact } from '../components/IconContact';
 import Typewriter from 'react-ts-typewriter';
+import type { Container, Engine } from 'tsparticles-engine';
+import { loadFull } from 'tsparticles';
 
 export const Home: FunctionComponent = () => {
   const [valueButton, setValueButton] = useState('me');
+  const particlesInit = useCallback(async (engine: Engine) => {
+    await loadFull(engine);
+  }, []);
+
   return (
     <HomeContainer>
+      <Particles id="tsparticles" url="/background.json" init={particlesInit} />
       <ContentContainer>
         <MainContent>
           {valueButton === 'me' ? (

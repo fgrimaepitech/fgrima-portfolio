@@ -1,6 +1,14 @@
 import { ButtonNavBar as _ButtonNavBar } from '../components/ButtonNavBar';
 import { ExperienceContainer as _ExperienceContainer } from '../components/ExperienceContainer';
 import styled from 'styled-components';
+import { Particles as _Particles } from 'react-particles';
+
+export const Particles = styled(_Particles)`
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+`;
 
 export const HomeContainer = styled.div`
   display: flex;
