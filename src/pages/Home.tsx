@@ -11,6 +11,8 @@ import {
   DescMeText,
   MeIcon,
   SkillsContainer,
+  ExperiencesContainer,
+  ExperienceContainer,
 } from '../styles/home.style';
 import Atropos from 'atropos/react';
 
@@ -92,6 +94,22 @@ export const Home: FunctionComponent = () => {
           {valueButton === 'exp' ? (
             <MeContent>
               <TitleText>{`My experiences`}</TitleText>
+              <ExperiencesContainer>
+                <ExperienceContainer
+                  background="/backgroundGamercraft.png"
+                  colorBackground="#ffffff"
+                  upText="2022 (Intern)"
+                  botText="Fullstack Development
+Engineer"
+                  logo="/gamercraftLogo.svg"
+                />
+                <ExperienceContainer
+                  colorBackground="#180B28"
+                  upText="2021 - 2026"
+                  botText="PGE IT Student"
+                  logo="/epitechLogo.svg"
+                />
+              </ExperiencesContainer>
             </MeContent>
           ) : null}
           {valueButton === 'contact' ? (

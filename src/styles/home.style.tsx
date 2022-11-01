@@ -1,4 +1,5 @@
 import { ButtonNavBar as _ButtonNavBar } from '../components/ButtonNavBar';
+import { ExperienceContainer as _ExperienceContainer } from '../components/ExperienceContainer';
 import styled from 'styled-components';
 
 export const HomeContainer = styled.div`
@@ -81,4 +82,16 @@ export const SkillsContainer = styled.div`
   margin-top: 50px;
   margin-bottom: 100px;
   gap: 20px;
+`;
+
+export const ExperiencesContainer = styled.div`
+  display: flex;
+  height: 70%;
+  gap: 20px;
+  margin-top: 20px;
+  width: 95%;
+`;
+
+export const ExperienceContainer = styled(_ExperienceContainer)`
+  flex: 1;
 `;
