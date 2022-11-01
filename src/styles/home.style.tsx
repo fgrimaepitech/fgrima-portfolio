@@ -49,7 +49,7 @@ export const MeContent = styled.div`
   width: 100%;
 `;
 
-export const HiText = styled.p`
+export const TitleText = styled.p`
   font-weight: 500;
   font-size: 40px;
   line-height: 60px;
@@ -71,4 +71,14 @@ export const MeIcon = styled.img`
   height: 350px;
   border-radius: 100%;
   margin-top: 30px;
+`;
+
+export const SkillsContainer = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 500px;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  gap: 20px;
 `;
