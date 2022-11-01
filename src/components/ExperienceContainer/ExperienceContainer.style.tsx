@@ -23,6 +23,9 @@ export const Content = styled.div`
   justify-content: space-between;
   flex-direction: column;
   height: 450px;
+  @media (max-width: 700px) {
+    height: 300px;
+  }
   z-index: 1;
 `;
 
@@ -49,6 +52,9 @@ export const BotText = styled.p`
   color: #ffffff;
   text-align: center;
   margin-bottom: 50px;
+  @media (max-width: 700px) {
+    font-size: 14px;
+  }
 `;
 
 export const Icon = styled.img`

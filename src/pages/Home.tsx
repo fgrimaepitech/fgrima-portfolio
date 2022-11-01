@@ -16,6 +16,7 @@ import {
   MailContact,
 } from '../styles/home.style';
 import Atropos from 'atropos/react';
+import { IconContact } from '../components/IconContact';
 
 export const Home: FunctionComponent = () => {
   const [valueButton, setValueButton] = useState('me');
@@ -118,26 +119,29 @@ Engineer"
               <TitleText>{`Contact`}</TitleText>
               <SkillsContainer>
                 <Atropos activeOffset={40} shadowScale={1.05}>
-                  <IconContent
+                  <IconContact
                     value="github"
                     icon="/github.svg"
                     color="#131313"
+                    link="https://github.com/bluefoxfr"
                     data-atropos-offset="10"
                   />
                 </Atropos>
                 <Atropos activeOffset={40} shadowScale={1.05}>
-                  <IconContent
+                  <IconContact
                     value="linkedin"
                     icon="/linkedin.svg"
                     color="#007EBB"
+                    link="https://www.linkedin.com/in/florian-grima-a22780210/"
                     data-atropos-offset="10"
                   />
                 </Atropos>
                 <Atropos activeOffset={40} shadowScale={1.05}>
-                  <IconContent
+                  <IconContact
                     value="fiverr"
                     icon="/fiverr.svg"
                     color="#5ABB7A"
+                    link="https://fr.fiverr.com/soprenz"
                     data-atropos-offset="10"
                   />
                 </Atropos>

@@ -38,6 +38,10 @@ export const NavBar = styled.div`
   margin-top: 5px;
   margin-bottom: 20%;
   gap: 70px;
+  @media (max-width: 700px) {
+    gap: 20px;
+    padding: 10px;
+  }
 `;
 
 export const ButtonNavBar = styled(_ButtonNavBar)``;
@@ -57,6 +61,7 @@ export const TitleText = styled.p`
   color: white;
   padding: 0;
   margin: 0;
+  text-align: center;
 `;
 
 export const DescMeText = styled.div`
