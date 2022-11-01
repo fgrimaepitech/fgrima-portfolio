@@ -3,6 +3,8 @@ import styled from 'styled-components';
 export const ButtonContainer = styled.div`
   display: flex;
   flex-direction: column;
+  align-items: center;
+  width: 68px;
 `;
 
 export const ButtonCircle = styled.div<{ isSelected: boolean }>`
@@ -10,6 +12,7 @@ export const ButtonCircle = styled.div<{ isSelected: boolean }>`
   align-items: center;
   text-align: center;
   padding: 19px;
+  width: fit-content;
   border-radius: 100%;
   transition: 200ms ease-out;
   ${({ isSelected }) => (isSelected ? 'border: 1px solid white' : null)};
