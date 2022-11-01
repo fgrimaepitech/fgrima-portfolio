@@ -17,6 +17,7 @@ import {
 } from '../styles/home.style';
 import Atropos from 'atropos/react';
 import { IconContact } from '../components/IconContact';
+import Typewriter from 'react-ts-typewriter';
 
 export const Home: FunctionComponent = () => {
   const [valueButton, setValueButton] = useState('me');
@@ -27,7 +28,9 @@ export const Home: FunctionComponent = () => {
           {valueButton === 'me' ? (
             <MeContent>
               <TitleText>{`Hi, I’m Florian Grima 👋`}</TitleText>
-              <DescMeText>{`French IT student & developper`}</DescMeText>
+              <DescMeText>
+                <Typewriter text="French IT student & developper" />
+              </DescMeText>
               <MeIcon alt="icon-me" src="/ibok.svg" />
             </MeContent>
           ) : null}
