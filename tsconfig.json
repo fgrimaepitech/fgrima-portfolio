@@ -7,10 +7,16 @@
       "esnext"
     ],
     "allowJs": true,
+    "baseUrl": ".",
     "skipLibCheck": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "strict": true,
+    "paths": {
+      "@components/*": ["src/components/*"],
+      "@pages/*": ["src/pages/*"],
+      "@styles/*": ["src/styles/*"],
+    },
     "forceConsistentCasingInFileNames": true,
     "noFallthroughCasesInSwitch": true,
     "module": "esnext",
