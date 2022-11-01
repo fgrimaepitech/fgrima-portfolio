@@ -13,6 +13,7 @@ import {
   SkillsContainer,
   ExperiencesContainer,
   ExperienceContainer,
+  MailContact,
 } from '../styles/home.style';
 import Atropos from 'atropos/react';
 
@@ -115,6 +116,37 @@ Engineer"
           {valueButton === 'contact' ? (
             <MeContent>
               <TitleText>{`Contact`}</TitleText>
+              <SkillsContainer>
+                <Atropos activeOffset={40} shadowScale={1.05}>
+                  <IconContent
+                    value="github"
+                    icon="/github.svg"
+                    color="#131313"
+                    data-atropos-offset="10"
+                  />
+                </Atropos>
+                <Atropos activeOffset={40} shadowScale={1.05}>
+                  <IconContent
+                    value="linkedin"
+                    icon="/linkedin.svg"
+                    color="#007EBB"
+                    data-atropos-offset="10"
+                  />
+                </Atropos>
+                <Atropos activeOffset={40} shadowScale={1.05}>
+                  <IconContent
+                    value="fiverr"
+                    icon="/fiverr.svg"
+                    color="#5ABB7A"
+                    data-atropos-offset="10"
+                  />
+                </Atropos>
+                <MailContact>
+                  {`Mail:`}
+                  <br />
+                  {`flori84@outlook.fr`}
+                </MailContact>
+              </SkillsContainer>
             </MeContent>
           ) : null}
         </MainContent>

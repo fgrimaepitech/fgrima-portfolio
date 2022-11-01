@@ -95,3 +95,12 @@ export const ExperiencesContainer = styled.div`
 export const ExperienceContainer = styled(_ExperienceContainer)`
   flex: 1;
 `;
+
+export const MailContact = styled.p`
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 48px;
+  display: flex;
+  color: #ffffff;
+  text-align: center;
+`;

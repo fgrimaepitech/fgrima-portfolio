@@ -23,6 +23,7 @@ export const ButtonCircle = styled.div<{ isSelected: boolean }>`
 `;
 
 export const Icon = styled.img`
+  transition: 200ms ease-out;
   width: 30px;
   height: 30px;
 `;
