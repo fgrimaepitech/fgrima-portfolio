@@ -2,6 +2,7 @@ import { ButtonNavBar as _ButtonNavBar } from '../components/ButtonNavBar';
 import { ExperienceContainer as _ExperienceContainer } from '../components/ExperienceContainer';
 import styled from 'styled-components';
 import { Particles as _Particles } from 'react-particles';
+import { IconContent as _IconContent } from '../components/IconContent';
 
 export const Particles = styled(_Particles)`
   position: absolute;
@@ -35,6 +36,11 @@ export const MainContent = styled.div`
   width: -webkit-fill-available;
   height: 100%;
   margin-top: 20%;
+  @media (max-width: 700px) {
+    min-height: 400px;
+    margin: 0px 10px;
+    margin-top: 5%;
+  }
 `;
 
 export const NavBar = styled.div`
@@ -70,6 +76,10 @@ export const TitleText = styled.p`
   padding: 0;
   margin: 0;
   text-align: center;
+  @media (max-width: 700px) {
+    font-size: 30px;
+    margin-top: 10%;
+  }
 `;
 
 export const DescMeText = styled.div`
@@ -78,6 +88,7 @@ export const DescMeText = styled.div`
   line-height: 36px;
   margin: 20px 0;
   color: white;
+  text-align: center;
 `;
 
 export const MeIcon = styled.img`
@@ -85,6 +96,10 @@ export const MeIcon = styled.img`
   height: 350px;
   border-radius: 100%;
   margin-top: 30px;
+  @media (max-width: 700px) {
+    width: 200px;
+    height: 200px;
+  }
 `;
 
 export const SkillsContainer = styled.div`
@@ -97,12 +112,22 @@ export const SkillsContainer = styled.div`
   gap: 20px;
 `;
 
+export const IconContent = styled(_IconContent)`
+  @media (max-width: 700px) {
+    width: 80px;
+    height: 80px;
+  }
+`;
+
 export const ExperiencesContainer = styled.div`
   display: flex;
   height: 70%;
   gap: 20px;
   margin-top: 20px;
   width: 95%;
+  @media (max-width: 700px) {
+    width: 70%;
+  }
 `;
 
 export const ExperienceContainer = styled(_ExperienceContainer)`

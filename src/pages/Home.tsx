@@ -1,26 +1,26 @@
-import { IconContent } from '../components/IconContent';
+import Atropos from 'atropos/react';
 import React, { FunctionComponent, useCallback, useState } from 'react';
+import Typewriter from 'react-ts-typewriter';
+import { loadFull } from 'tsparticles';
+import type { Engine } from 'tsparticles-engine';
+import { IconContact } from '../components/IconContact';
 import {
-  HomeContainer,
-  MainContent,
-  NavBar,
   ButtonNavBar,
   ContentContainer,
-  MeContent,
-  TitleText,
   DescMeText,
-  MeIcon,
-  SkillsContainer,
-  ExperiencesContainer,
   ExperienceContainer,
+  ExperiencesContainer,
+  HomeContainer,
+  IconContent,
   MailContact,
+  MainContent,
+  MeContent,
+  MeIcon,
+  NavBar,
   Particles,
+  SkillsContainer,
+  TitleText,
 } from '../styles/home.style';
-import Atropos from 'atropos/react';
-import { IconContact } from '../components/IconContact';
-import Typewriter from 'react-ts-typewriter';
-import type { Container, Engine } from 'tsparticles-engine';
-import { loadFull } from 'tsparticles';
 
 export const Home: FunctionComponent = () => {
   const [valueButton, setValueButton] = useState('me');

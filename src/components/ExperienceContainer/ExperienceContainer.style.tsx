@@ -59,4 +59,8 @@ export const BotText = styled.p`
 
 export const Icon = styled.img`
   margin-top: 30px;
+  @media (max-width: 700px) {
+    max-height: 150px;
+    max-width: 100px;
+  }
 `;

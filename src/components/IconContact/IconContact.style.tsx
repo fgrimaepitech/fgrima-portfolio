@@ -19,6 +19,10 @@ export const IconContainer = styled.a<{ color: string }>`
 export const IconIcon = styled.img`
   width: 70px;
   height: 70px;
+  @media (max-width: 700px) {
+    width: 50px;
+    height: 50px;
+  }
 `;
 
 export const ValueName = styled.h1<{ color: string | undefined }>`
