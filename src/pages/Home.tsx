@@ -37,7 +37,7 @@ export const Home: FunctionComponent = () => {
             <MeContent>
               <TitleText>{`Hi, I’m Florian Grima 👋`}</TitleText>
               <DescMeText>
-                <Typewriter text="French IT student & developper" />
+                <Typewriter text="French IT student & developer" />
               </DescMeText>
               <MeIcon alt="icon-me" src="/ibok.svg" />
             </MeContent>
